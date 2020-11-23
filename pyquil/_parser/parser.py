@@ -513,8 +513,6 @@ class QuilTransformer(Transformer):  # type: ignore
         else:
             return number
 
-    # TODO(notmgsk): These were originally lowercase. Is that required
-    # by the language spec?
     @v_args(inline=True)
     def apply_fun(self, fun, arg):
         if fun == "SIN":
