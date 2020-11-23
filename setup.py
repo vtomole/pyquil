@@ -61,7 +61,8 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/rigetti/pyquil.git",
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
-    package_data={"pyquil": ["py.typed", "grammar.lark"]},
+    package_data={"pyquil": ["py.typed"],
+                  "pyquil._parser": ["grammar.lark"]},
     license="Apache-2.0",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
