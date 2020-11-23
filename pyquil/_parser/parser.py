@@ -113,6 +113,7 @@ class QuilTransformer(Transformer):  # type: ignore
     @v_args(inline=True)
     def pauli_term(self, name, expression, qubits):
         from pyquil.paulis import PauliTerm
+
         return PauliTerm.from_list(list(zip(name, qubits)), expression)
 
     @v_args(inline=True)
